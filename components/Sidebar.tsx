@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react'
+import { HomeIcon,Layers2Icon,ShieldCheckIcon,CoinsIcon } from "lucide-react";
 
 const routes = [
   {
@@ -9,22 +10,22 @@ const routes = [
     icon: HomeIcon,
   },
   {
-    href: "",
-    label: "Home",
-    icon: Icon,
+    href: "workflows",
+    label: "Workflows",
+    icon: Layers2Icon,
   }, {
-    href: "",
-    label: "Home",
-    icon: HomeIcon,
+    href: "credentials",
+    label: "Credentials",
+    icon: ShieldCheckIcon,
   }, {
-    href: "",
-    label: "Home",
-    icon: HomeIcon,
+    href: "billing",
+    label: "Billing",
+    icon: CoinsIcon,
   },
 ]
 function DesktopSidebar() {
   return (
-    <div>DesktopSidebar</div>
+    <div className='hidden relative md:block min-w-[280px] max-w-[280px] h-screen overflow-hidden w-full bg-primary/5 dark:bg-secondary/30 dark:text-foreground text-muted-foreground border-r-2 border-separate'>DesktopSidebar</div>
   )
 }
 
